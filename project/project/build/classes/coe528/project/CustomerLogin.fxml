@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.CustomerLoginController">
+   <children>
+      <Button fx:id="depositButton" layoutX="215.0" layoutY="118.0" mnemonicParsing="false" onMousePressed="#handleDepositButton" prefHeight="33.0" prefWidth="175.0" style="-fx-background-color: #41fc03;" text="Deposit" textFill="#050245">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="withdrawalButton" layoutX="214.0" layoutY="184.0" mnemonicParsing="false" onMousePressed="#handleWithdrawalButton" prefHeight="33.0" prefWidth="175.0" style="-fx-background-color: #41fc03;" text="Withdrawal" textFill="#050245">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="onlinePurchaseButton" layoutX="214.0" layoutY="247.0" mnemonicParsing="false" onMousePressed="#handleOnlinePurchaseButton" prefHeight="33.0" prefWidth="175.0" style="-fx-background-color: #41fc03;" text="Online Purchase" textFill="#050245">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="balanceButton" layoutX="214.0" layoutY="312.0" mnemonicParsing="false" onMousePressed="#handleBalanceButton" prefHeight="33.0" prefWidth="175.0" style="-fx-background-color: #41fc03;" text="View Balance" textFill="#050245">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutButton" layoutX="539.0" layoutY="374.0" mnemonicParsing="false" onMousePressed="#handleCustomerLogoutButton" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: ACFFBF;" text="Logout" textFill="#080356">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amountField" alignment="CENTER" layoutX="201.0" layoutY="220.0" prefHeight="23.0" prefWidth="202.0" promptText="Amount" visible="false">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="balanceLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="151.0" prefHeight="77.0" prefWidth="587.0" textFill="RED" visible="false">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font></Label>
+      <Button fx:id="okButton" layoutX="272.0" layoutY="280.0" mnemonicParsing="false" onMousePressed="#handleOkButton" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: ACFFBF;" text="Ok" textFill="#080356" visible="false">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="customerNameLabel" alignment="CENTER" layoutX="176.0" layoutY="60.0" prefHeight="45.0" prefWidth="253.0">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutY="374.0" mnemonicParsing="false" onMousePressed="#handleBackButton" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: ACFFBF;" text="Back" textFill="#080356" visible="false">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: ACFFBF;">
+         <children>
+            <Text fill="#001b6b" layoutX="207.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TMU BANK" wrappingWidth="202.0">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="itemName" alignment="CENTER" layoutX="201.0" layoutY="160.0" prefHeight="23.0" prefWidth="202.0" promptText="Item Name" visible="false">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
